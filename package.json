@@ -1,0 +1,36 @@
+{
+  "name": "moby-accessibility-checker",
+  "version": "1.0.0",
+  "description": "The Moby Accessibility Score - Comprehensive WCAG compliance checker with PDF reports",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "accessibility",
+    "wcag",
+    "a11y",
+    "compliance",
+    "care-sector",
+    "mcp"
+  ],
+  "author": "James - The Access Group",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "puppeteer": "^23.10.4",
+    "playwright": "^1.49.0",
+    "axe-core": "^4.10.2",
+    "@axe-core/puppeteer": "^4.10.0",
+    "pa11y": "^8.0.0",
+    "pdfkit": "^0.15.0",
+    "color-contrast-checker": "^2.1.0",
+    "cheerio": "^1.0.0",
+    "syllable": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

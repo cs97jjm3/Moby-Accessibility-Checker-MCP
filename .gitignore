@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Browsers (large downloads from Playwright)
+.playwright/
+ms-playwright/
+
+# Output files
+reports/
+*.pdf
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Claude Desktop config (personal paths)
+claude_desktop_config.json
+
+# Test files
+test-results/
+coverage/

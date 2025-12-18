@@ -1,0 +1,78 @@
+{
+  "manifest_version": "0.2",
+  "name": "moby-accessibility-checker",
+  "display_name": "The Moby Accessibility Checker",
+  "version": "1.0.0",
+  "description": "Comprehensive WCAG compliance checker with The Moby Score (0-100). Runs 10 free accessibility tools, generates PDF reports, checks UK legal compliance and care sector standards.",
+  "author": {
+    "name": "James Murrell",
+    "email": "james.murrell@theaccessgroup.com"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/index.js"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "audit_accessibility",
+      "description": "Run comprehensive accessibility audit with The Moby Score. Returns detailed analysis of WCAG compliance, UK legal requirements, and care sector standards."
+    },
+    {
+      "name": "generate_pdf_report",
+      "description": "Generate professional PDF report with The Moby Score, issues, fixes, and UK legal compliance summary."
+    },
+    {
+      "name": "check_color_contrast",
+      "description": "Detailed color contrast analysis against WCAG AA/AAA standards. Tests all text elements."
+    },
+    {
+      "name": "test_keyboard_navigation",
+      "description": "Test keyboard-only navigation. Records tab order, identifies focus traps, checks skip links."
+    },
+    {
+      "name": "validate_aria_labels",
+      "description": "Validate ARIA attributes, labels, and roles. Checks all interactive elements."
+    },
+    {
+      "name": "audit_form_accessibility",
+      "description": "Comprehensive form accessibility check. Labels, error messages, field associations, autocomplete."
+    },
+    {
+      "name": "check_cognitive_accessibility",
+      "description": "Analyze reading level, sentence complexity, jargon usage. Care sector focus (elderly users)."
+    },
+    {
+      "name": "check_care_sector_standards",
+      "description": "Care sector specific checks: NHS standards, CQC requirements, emergency feature accessibility."
+    },
+    {
+      "name": "compare_browsers",
+      "description": "Run same audit across all browsers. Identifies browser-specific accessibility issues."
+    },
+    {
+      "name": "get_moby_score",
+      "description": "Calculate The Moby Score (0-100) from audit results. Includes rating and improvement suggestions."
+    }
+  ],
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "wcag",
+    "compliance",
+    "audit",
+    "care-sector",
+    "nhs",
+    "cqc",
+    "uk-legal",
+    "moby-score"
+  ],
+  "license": "MIT"
+}

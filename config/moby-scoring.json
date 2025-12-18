@@ -1,0 +1,65 @@
+{
+  "scoring": {
+    "base_score": 100,
+    "deductions": {
+      "critical": 10,
+      "serious": 3,
+      "moderate": 1,
+      "minor": 0.25
+    },
+    "bonuses": {
+      "aaa_compliance": 5,
+      "care_sector_best_practices": 2,
+      "exceeds_standards": 3
+    }
+  },
+  "ratings": {
+    "outstanding": {
+      "min_score": 90,
+      "label": "OUTSTANDING",
+      "emoji": "🐕",
+      "description": "Moby approves! Accessible to virtually everyone.",
+      "certificate_eligible": true
+    },
+    "good": {
+      "min_score": 75,
+      "label": "GOOD",
+      "description": "Minor improvements needed. Most users can access content.",
+      "certificate_eligible": false
+    },
+    "requires_improvement": {
+      "min_score": 60,
+      "label": "REQUIRES IMPROVEMENT",
+      "description": "Significant barriers exist. Some disabled users cannot use site.",
+      "certificate_eligible": false
+    },
+    "inadequate": {
+      "min_score": 40,
+      "label": "INADEQUATE",
+      "description": "Major accessibility failures. Many disabled users excluded.",
+      "certificate_eligible": false
+    },
+    "critical": {
+      "min_score": 0,
+      "label": "CRITICAL",
+      "description": "Immediate action required. Legal risk, user safety concerns.",
+      "certificate_eligible": false
+    }
+  },
+  "legal_compliance": {
+    "uk_public_sector_regulations_2018": {
+      "min_score": 75,
+      "requires_zero_critical": true,
+      "wcag_level": "AA"
+    },
+    "equality_act_2010": {
+      "min_score": 70,
+      "requires_zero_critical": false
+    },
+    "cqc_digital_standards": {
+      "min_score": 75,
+      "requires_zero_critical": false
+    }
+  },
+  "tagline": "Like a good dog, your website should be excited to greet everyone - no matter how they arrive at the door."
+}

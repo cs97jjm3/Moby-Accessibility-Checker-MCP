@@ -1,0 +1,25 @@
+{
+  "chromium": {
+    "enabled": true,
+    "engine": "puppeteer",
+    "executablePath": "",
+    "args": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage"
+    ]
+  },
+  "firefox": {
+    "enabled": true,
+    "engine": "playwright",
+    "executablePath": "",
+    "args": []
+  },
+  "webkit": {
+    "enabled": true,
+    "engine": "playwright",
+    "executablePath": "",
+    "args": []
+  },
+  "default": "chromium"
+}
