@@ -22,12 +22,19 @@ Named after Moby - because accessibility should be straightforward, reliable, an
 
 ## 🚀 Quick Start
 
-### Installation
+### One-Click Installation (Recommended)
+
+1. **Download the `.mcpb` file** from the [Releases page](https://github.com/cs97jjm3/Moby-Accessibility-Checker-MCP/releases)
+2. **Double-click** the `.mcpb` file (or install via Claude Desktop > Settings > Extensions)
+3. **Restart Claude Desktop**
+4. **Test it** - In Claude: "Check accessibility for https://example.com"
+
+### Manual Installation (Developers)
 
 1. **Clone this repo**
    ```bash
-   git clone https://github.com/yourusername/moby-accessibility-checker.git
-   cd moby-accessibility-checker
+   git clone https://github.com/cs97jjm3/Moby-Accessibility-Checker-MCP.git
+   cd Moby-Accessibility-Checker-MCP
    ```
 
 2. **Run installer** (Windows/Mac/Linux)
@@ -42,13 +49,7 @@ Named after Moby - because accessibility should be straightforward, reliable, an
 
 3. **Restart Claude Desktop**
 
-4. **Test it**
-   ```
-   In Claude: "Check accessibility for https://example.com"
-   ```
-
-### Manual Installation
-
+**Or install manually:**
 ```bash
 npm install
 npx playwright install chromium firefox webkit
@@ -61,7 +62,7 @@ Then add to your Claude Desktop config (`%APPDATA%\Claude\claude_desktop_config.
   "mcpServers": {
     "moby-accessibility-checker": {
       "command": "node",
-      "args": ["C:\\path\\to\\moby-accessibility-checker\\index.js"]
+      "args": ["C:\\path\\to\\Moby-Accessibility-Checker-MCP\\index.js"]
     }
   }
 }
@@ -213,6 +214,8 @@ moby-accessibility-checker/
 ├── install.sh               # Mac/Linux installer
 ├── manifest.json            # Claude Desktop config
 ├── README.md                # This file
+├── QUICK_START.md           # Quick start guide
+├── DISTRIBUTION.md          # Distribution guide
 ├── config/
 │   ├── browsers.json        # Browser settings
 │   └── moby-scoring.json    # Score thresholds
@@ -256,30 +259,6 @@ Named after my dog - because accessibility should be straightforward, reliable, 
 
 ---
 
-## 📚 Want to Build Tools Like This?
-
-This tool was built using the process documented in **["The Business Analyst's Guide to AI-Assisted Tool Development"](https://gumroad.com/l/ba-ai-tools)**.
-
-Learn how to:
-- Identify workflows worth automating
-- Work effectively with AI as a collaborator
-- Build production-ready tools without being a developer
-- Avoid common pitfalls and mistakes
-
-**£5 • Real code • Real examples • Real process**
-
-Available February 4th, 2025
-
----
-
-**Questions?** Open an issue  
-**Want to help?** Submit a PR  
-**Found it useful?** Star the repo ⭐
-
-Made with ❤️ by James Murrell
-
----
-
 ## 📚 Learn to Build Tools Like This
 
 This tool was built using the methods described in **"The Business Analyst's Guide to AI-Assisted Tool Development"**.
@@ -290,8 +269,16 @@ This tool was built using the methods described in **"The Business Analyst's Gui
 - Work effectively with AI
 - Go from idea to production tool
 
-**Get the guide:** https://murrelljames.gumroad.com/l/pvfww (£5)
+**Get the guide:** [https://murrelljames.gumroad.com/l/pvfww](https://murrelljames.gumroad.com/l/pvfww) (£5)
 
-**Repository:** https://github.com/cs97jjm3/ba-ai-tools-guide
+**Repository:** [https://github.com/cs97jjm3/ba-ai-tools-guide](https://github.com/cs97jjm3/ba-ai-tools-guide)
 
-Built by a 57-year-old BA who'd never coded before. If I can do it, you can too. 
+Built by a 57-year-old BA who'd never coded before. If I can do it, you can too.
+
+---
+
+**Questions?** [Open an issue](https://github.com/cs97jjm3/Moby-Accessibility-Checker-MCP/issues)  
+**Want to help?** [Submit a PR](https://github.com/cs97jjm3/Moby-Accessibility-Checker-MCP/pulls)  
+**Found it useful?** [Star the repo ⭐](https://github.com/cs97jjm3/Moby-Accessibility-Checker-MCP)
+
+Made with ❤️ by James Murrell

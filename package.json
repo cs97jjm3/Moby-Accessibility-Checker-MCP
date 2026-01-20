@@ -4,9 +4,16 @@
   "description": "The Moby Accessibility Score - Comprehensive WCAG compliance checker with PDF reports",
   "main": "index.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cs97jjm3/Moby-Accessibility-Checker-MCP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cs97jjm3/Moby-Accessibility-Checker-MCP/issues"
+  },
+  "homepage": "https://github.com/cs97jjm3/Moby-Accessibility-Checker-MCP#readme",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "start": "node index.js"
   },
   "keywords": [
     "accessibility",
@@ -14,9 +21,11 @@
     "a11y",
     "compliance",
     "care-sector",
-    "mcp"
+    "mcp",
+    "claude",
+    "desktop-extension"
   ],
-  "author": "James - The Access Group",
+  "author": "James Murrell <james.murrell@theaccessgroup.com>",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.6.0",
