@@ -1,7 +1,7 @@
 # 🐕 THE MOBY ACCESSIBILITY CHECKER
 ## One-Click Install Package for Claude Desktop
 
-**Created by:** James, Business Analyst, The Access Group  
+**Created by:** James, Business Analyst,
 **Version:** 1.0.0  
 **Installation Time:** 2 minutes  
 **First Audit:** 60 seconds
